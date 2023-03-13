@@ -40,6 +40,7 @@ public class AddUserServlet extends HttpServlet {
 		String emailId = request.getParameter("emailId");
 		String password = request.getParameter("password");
 		
+		response.setContentType("text/html");
 		
 		try(Statement statement = connection.createStatement();){
 			
@@ -51,6 +52,7 @@ public class AddUserServlet extends HttpServlet {
 		}else {
 			out.println("<h1>Error creating user</h1>");
 		}
+		out.println("<a href=\"index.html\">Home</a>");
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

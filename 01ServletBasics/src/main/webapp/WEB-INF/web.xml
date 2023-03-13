@@ -21,11 +21,11 @@
 
 
  <servlet>
-	  <servlet-name>additionservlet</servlet-name>
+	  <servlet-name>add</servlet-name>
 	  <servlet-class>servlets.AdditionServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-	  <servlet-name>additionservlet</servlet-name>
+	  <servlet-name>add</servlet-name>
 	  <url-pattern>/add</url-pattern>
   </servlet-mapping>
 </web-app>

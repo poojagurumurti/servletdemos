@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/updateUserServlet")
-public class UpdateUserServlet extends HttpServlet {
+@WebServlet("/deleteUser")
+public class DeleteUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
@@ -37,18 +37,19 @@ public class UpdateUserServlet extends HttpServlet {
 			
 			
 			String emailId = request.getParameter("emailId");
-			String password = request.getParameter("password");
+			
 			response.setContentType("text/html");
+			
 			
 			try(Statement statement = connection.createStatement();){
 				
 
-			int result =statement.executeUpdate(" update user set password = '" +password + "' where email ='"+ emailId + "'");
+			int result =statement.executeUpdate(" delete from user where email = '"+ emailId + "'");
 			PrintWriter out =response.getWriter();
 			if(result>0) {
-				out.println("<h1>Password updated</h1>");
+				out.println("<h1>User deleted</h1>");
 			}else {
-				out.println("<h1>Error updating user password</h1>");
+				out.println("<h1>Error deleting user</h1>");
 			}
 			out.println("<a href=\"index.html\">Home</a>");
 			
