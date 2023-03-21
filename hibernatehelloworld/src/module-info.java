@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ptamragouri
+ *
+ */
+module hibernatehelloworld {
+}
