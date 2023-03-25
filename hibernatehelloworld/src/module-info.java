@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author ptamragouri
- *
- */
-module hibernatehelloworld {
-}

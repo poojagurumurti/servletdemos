@@ -1,9 +1,0 @@
-use studentweb;
-
-
-insert into student (first_name,last_name,email) values('Pooja','Tamragouri','ptam@gmailcom');
-insert into student (first_name,last_name,email) values('Totashri','Sajjanar','totu@gmailcom');
-insert into student (first_name,last_name,email) values('Trigun','Gurumurti','tritam@gmailcom');
-insert into student (first_name,last_name,email) values('Kavya','Dugnur','kdd@gmailcom');
-insert into student (first_name,last_name,email) values('Anu','Hegde','ann@gmailcom');
-insert into student (first_name,last_name,email) values('Rashmi','patil','rash@gmailcom');
